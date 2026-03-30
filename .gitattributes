@@ -1,7 +1,7 @@
 # Exclude shell scripts from language statistics
-*.sh linguist-vendored
-build.sh linguist-vendored
-scripts/*.sh linguist-vendored
+*.sh linguist-vendored linguist-documentation
+build.sh linguist-vendored linguist-documentation
+scripts/*.sh linguist-vendored linguist-documentation
 scripts/ linguist-vendored
 iso-build/ linguist-vendored
 iso-build/** linguist-vendored
