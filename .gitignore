@@ -3,9 +3,11 @@
 !build.sh
 !scripts/*.sh
 
-# Markdown files (except README.md)
+# Markdown files (except README.md, ENVIRONMENT.md, DONATIONS.md)
 *.md
 !README.md
+!ENVIRONMENT.md
+!DONATIONS.md
 
 # Build directories
 build/
