@@ -1,0 +1,57 @@
+# CircleOS Package List
+
+# Base system
+systemd
+dbus
+network-manager
+pulseaudio
+bluez
+
+# Display server
+xorg
+xserver-xorg-video-all
+
+# Qt6 and dependencies
+qt6-base-dev
+qt6-declarative-dev
+qt6-wayland-dev
+qt6-svg-dev
+qml6-module-qtquick
+qml6-module-qtquick-controls
+qml6-module-qtquick-layouts
+qml6-module-qtquick-window
+
+# Development tools
+build-essential
+cmake
+git
+
+# Utilities
+sudo
+nano
+vim
+wget
+curl
+htop
+
+# Fonts
+fonts-roboto
+fonts-noto
+fonts-liberation
+
+# File system
+udisks2
+gvfs
+
+# Network
+wpasupplicant
+wireless-tools
+
+# Live system
+live-boot
+live-config
+live-config-systemd
+
+# Installer
+calamares
+calamares-settings-debian

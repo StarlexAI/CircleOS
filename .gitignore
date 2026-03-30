@@ -1,0 +1,95 @@
+# Build directories
+build/
+build-*/
+*.user
+*.user.*
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Qt
+*.qm
+*.autosave
+*.pro.user*
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+*.moc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Compiled files
+*.o
+*.so
+*.so.*
+*.a
+*.la
+*.lo
+*.dll
+*.exe
+
+# ISO build artifacts
+iso-output/
+iso-build/circleos-live/binary/
+iso-build/circleos-live/cache/
+iso-build/circleos-live/chroot/
+iso-build/circleos-live/chroot.files/
+iso-build/circleos-live/chroot.packages.install/
+iso-build/circleos-live/chroot.packages.live/
+iso-build/circleos-live/.build/
+iso-build/circleos-live/build.log
+iso-build/circleos-live/*.iso
+iso-build/circleos-live/*.sha256
+iso-build/circleos-live/config/binary
+iso-build/circleos-live/config/bootstrap
+iso-build/circleos-live/config/chroot
+iso-build/circleos-live/config/common
+iso-build/circleos-live/config/source
+
+# Logs
+*.log
+build.log
+iso-build.log
+iso-live-build.log
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+.*.swp
+
+# Package files
+*.deb
+*.rpm
+*.tar.gz
+*.tar.xz
+*.zip
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Generated documentation
+BUILD_RESULTS.md
+BUILD_SUCCESS.md
+ULTIMATE_SUMMARY.md
+MASSIVE_PROJECT_STATS.md
+PROJECT_STATUS.md

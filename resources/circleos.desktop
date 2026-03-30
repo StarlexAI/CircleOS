@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=CircleOS
+Comment=Modern circular UI desktop environment
+Exec=circleos-shell
+Type=Application
+DesktopNames=CircleOS

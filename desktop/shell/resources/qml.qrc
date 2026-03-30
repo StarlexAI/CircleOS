@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/components/TopPanel.qml</file>
+        <file>qml/components/Dock.qml</file>
+        <file>qml/components/AppLauncher.qml</file>
+        <file>qml/components/NotificationCenter.qml</file>
+        <file>qml/components/CircularButton.qml</file>
+        <file>qml/components/DockIcon.qml</file>
+        <file>qml/components/DesktopIcon.qml</file>
+        <file>qml/components/AppIcon.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>wallpaper.jpg</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>apps.svg</file>
+        <file>notifications.svg</file>
+        <file>account-circle.svg</file>
+        <file>network-wifi.svg</file>
+        <file>volume-high.svg</file>
+        <file>battery-full.svg</file>
+        <file>folder.svg</file>
+        <file>terminal.svg</file>
+        <file>web.svg</file>
+        <file>settings.svg</file>
+        <file>shopping.svg</file>
+        <file>search.svg</file>
+        <file>lock.svg</file>
+        <file>arrow-forward.svg</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>Roboto-Regular.ttf</file>
+        <file>Roboto-Medium.ttf</file>
+        <file>Roboto-Bold.ttf</file>
+    </qresource>
+</RCC>

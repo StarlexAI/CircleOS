@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+    --mode debian \
+    --distribution bookworm \
+    --archive-areas "main contrib non-free non-free-firmware" \
+    --architectures amd64 \
+    --linux-flavours amd64 \
+    --bootappend-live "boot=live components quiet splash" \
+    --bootloaders grub-efi \
+    --binary-images iso-hybrid \
+    --iso-application "CircleOS" \
+    --iso-publisher "CircleOS Project" \
+    --iso-volume "CircleOS_1.0.0" \
+    --image-name "circleos-1.0.0-amd64" \
+    --debian-installer none \
+    --apt-recommends true \
+    --apt-indices false \
+    --checksums sha256 \
+    --memtest none \
+    --system live \
+    --compression xz \
+    --mirror-bootstrap http://deb.debian.org/debian/ \
+    --mirror-binary http://deb.debian.org/debian/ \
+    "${@}"

@@ -1,0 +1,17 @@
+[Unit]
+Description=CircleOS Desktop Shell
+After=graphical.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/circleos-shell
+Restart=on-failure
+RestartSec=3
+Environment=QT_QPA_PLATFORM=wayland
+Environment=XDG_SESSION_TYPE=wayland
+Environment=XDG_CURRENT_DESKTOP=CircleOS
+Environment=QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+
+[Install]
+WantedBy=graphical-session.target

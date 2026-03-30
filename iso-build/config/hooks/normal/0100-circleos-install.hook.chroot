@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Install CircleOS binaries and files
+
+set -e
+
+echo "Installing CircleOS components..."
+
+# Create directories
+mkdir -p /usr/bin
+mkdir -p /usr/lib
+mkdir -p /usr/share/applications
+mkdir -p /usr/share/circleos
+mkdir -p /etc/xdg/autostart
+
+# Copy binaries (will be provided by includes.chroot)
+if [ -d /tmp/circleos-build ]; then
+    # Copy applications
+    cp -r /tmp/circleos-build/apps/*/circleos-* /usr/bin/ 2>/dev/null || true
+    
+    # Copy desktop components
+    cp -r /tmp/circleos-build/desktop/*/circleos-* /usr/bin/ 2>/dev/null || true
+    
+    # Copy libraries
+    cp -r /tmp/circleos-build/core/*.so* /usr/lib/ 2>/dev/null || true
+    
+    # Copy resources
+    cp -r /tmp/circleos-build/resources/* /usr/share/circleos/ 2>/dev/null || true
+    
+    # Cleanup
+    rm -rf /tmp/circleos-build
+fi
+
+# Set permissions
+chmod +x /usr/bin/circleos-* 2>/dev/null || true
+
+# Update library cache
+ldconfig
+
+echo "CircleOS installation complete!"

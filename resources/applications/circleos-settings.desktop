@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Settings
+Comment=System settings and preferences
+Icon=settings
+Exec=circleos-settings
+Categories=Settings;System;
+Terminal=false
+StartupNotify=true

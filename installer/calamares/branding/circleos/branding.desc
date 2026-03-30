@@ -1,0 +1,28 @@
+---
+componentName: circleos
+
+strings:
+    productName:         "CircleOS"
+    shortProductName:    "CircleOS"
+    version:             "1.0.0"
+    shortVersion:        "1.0"
+    versionedName:       "CircleOS 1.0"
+    shortVersionedName:  "CircleOS 1.0"
+    bootloaderEntryName: "CircleOS"
+    productUrl:          "https://circleos.org/"
+    supportUrl:          "https://circleos.org/support"
+    knownIssuesUrl:      "https://circleos.org/issues"
+    releaseNotesUrl:     "https://circleos.org/release-notes"
+
+images:
+    productLogo:         "logo.svg"
+    productIcon:         "icon.svg"
+    productWelcome:      "welcome.png"
+
+slideshow:              "show.qml"
+
+style:
+   sidebarBackground:    "#2196f3"
+   sidebarText:          "#ffffff"
+   sidebarTextSelect:    "#e3f2fd"
+   sidebarTextHighlight: "#1976d2"

@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# Install CircleOS binaries and libraries
+
+set -e
+
+echo "I: Installing CircleOS components..."
+
+# Create directories
+mkdir -p /usr/bin
+mkdir -p /usr/lib
+mkdir -p /usr/share/applications
+mkdir -p /usr/share/circleos
+mkdir -p /etc/xdg/autostart
+
+# Copy binaries from includes.chroot
+if [ -d /tmp/circleos ]; then
+    echo "I: Copying CircleOS binaries..."
+    cp -v /tmp/circleos/bin/* /usr/bin/ 2>/dev/null || true
+    
+    echo "I: Copying CircleOS libraries..."
+    cp -v /tmp/circleos/lib/* /usr/lib/ 2>/dev/null || true
+    
+    echo "I: Setting permissions..."
+    chmod +x /usr/bin/circleos-* 2>/dev/null || true
+    
+    echo "I: Updating library cache..."
+    ldconfig
+    
+    echo "I: Cleaning up..."
+    rm -rf /tmp/circleos
+fi
+
+# Create desktop entry for CircleOS Shell
+cat > /usr/share/applications/circleos-shell.desktop << 'EOF'
+[Desktop Entry]
+Type=Application
+Name=CircleOS Shell
+Comment=CircleOS Desktop Environment
+Exec=circleos-shell
+Icon=circleos
+Terminal=false
+Categories=System;
+EOF
+
+# Create autostart entry
+cat > /etc/xdg/autostart/circleos-shell.desktop << 'EOF'
+[Desktop Entry]
+Type=Application
+Name=CircleOS Shell
+Exec=circleos-shell
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+EOF
+
+echo "I: CircleOS installation complete!"

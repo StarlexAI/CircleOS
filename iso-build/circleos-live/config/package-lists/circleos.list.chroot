@@ -1,0 +1,63 @@
+# CircleOS Base System Packages
+
+# Essential system
+systemd
+systemd-sysv
+dbus
+udev
+sudo
+
+# Live system
+live-boot
+live-config
+live-config-systemd
+
+# Network
+network-manager
+wpasupplicant
+wireless-tools
+
+# Display server
+xorg
+xserver-xorg-video-all
+xinit
+
+# Qt6 runtime
+qt6-base-dev
+qt6-declarative-dev
+qt6-wayland-dev
+qt6-svg-dev
+qml6-module-qtquick
+qml6-module-qtquick-controls
+qml6-module-qtquick-layouts
+qml6-module-qtquick-window
+qml6-module-qtquick-effects
+
+# Audio
+pulseaudio
+pulseaudio-utils
+alsa-utils
+
+# Bluetooth
+bluez
+bluez-tools
+
+# File system
+udisks2
+gvfs
+gvfs-backends
+
+# Fonts
+fonts-roboto
+fonts-noto
+fonts-noto-color-emoji
+fonts-liberation
+
+# Basic utilities
+nano
+vim-tiny
+less
+wget
+curl
+htop
+file

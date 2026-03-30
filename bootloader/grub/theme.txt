@@ -1,0 +1,52 @@
+# CircleOS GRUB Theme
+# Modern circular design
+
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#2196f3"
+terminal-font: "Roboto Regular 16"
+
+# Boot menu
++ boot_menu {
+    left = 25%
+    top = 30%
+    width = 50%
+    height = 50%
+    item_font = "Roboto Regular 18"
+    item_color = "#ffffff"
+    selected_item_color = "#2196f3"
+    selected_item_pixmap_style = "select_*.png"
+    icon_width = 32
+    icon_height = 32
+    item_height = 48
+    item_padding = 16
+    item_spacing = 8
+    menu_pixmap_style = "menu_*.png"
+}
+
+# Progress bar
++ progress_bar {
+    id = "__timeout__"
+    left = 25%
+    top = 82%
+    width = 50%
+    height = 24
+    font = "Roboto Regular 14"
+    text_color = "#ffffff"
+    fg_color = "#2196f3"
+    bg_color = "#424242"
+    border_color = "#757575"
+    text = "@TIMEOUT_NOTIFICATION_LONG@"
+}
+
+# Labels
++ label {
+    top = 90%
+    left = 0
+    width = 100%
+    height = 20
+    text = "CircleOS 1.0"
+    color = "#ffffff"
+    font = "Roboto Medium 16"
+    align = "center"
+}

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+# CircleOS Live Build Script
+
+lb build noauto "${@}" 2>&1 | tee build.log

@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.20)
+project(CircleOS VERSION 1.0.0 LANGUAGES CXX C)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Global definitions
+add_definitions(-DCIRCLEOS_VERSION="${PROJECT_VERSION}")
+
+message(STATUS "")
+message(STATUS "🔵 CircleOS Build Configuration")
+message(STATUS "================================")
+message(STATUS "Version: ${PROJECT_VERSION}")
+message(STATUS "Build Type: ${CMAKE_BUILD_TYPE}")
+message(STATUS "C++ Standard: ${CMAKE_CXX_STANDARD}")
+message(STATUS "")
+message(STATUS "This is a minimal build configuration.")
+message(STATUS "For full build, install Qt6 dependencies:")
+message(STATUS "  sudo apt install qt6-base-dev qt6-declarative-dev qt6-wayland-dev")
+message(STATUS "")
+
+# Create a simple test executable to verify build system
+add_executable(circleos-version-check
+    ${CMAKE_CURRENT_SOURCE_DIR}/scripts/version-check.cpp
+)
+
+install(FILES README.md QUICKSTART.md INSTALL.md DESTINATION share/doc/circleos)
+
+message(STATUS "✅ Minimal build configured successfully")
+message(STATUS "Run 'make' to build")
+message(STATUS "")
