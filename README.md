@@ -183,6 +183,14 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - [Keyboard Shortcuts](KEYBOARD_SHORTCUTS.md)
 - [ISO Build Instructions](BUILD_ISO_INSTRUCTIONS.md)
 
+## 🔧 Development Environment
+
+**Important:** Please read [ENVIRONMENT.md](ENVIRONMENT.md) for information about the current development environment and ISO building limitations.
+
+## 💝 Support the Project
+
+CircleOS is free and open-source. If you'd like to support development, please see [DONATIONS.md](DONATIONS.md) for ways to contribute.
+
 ## 🔑 Keyboard Shortcuts
 
 - `Super + D` - Show desktop
