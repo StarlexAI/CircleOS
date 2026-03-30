@@ -1,7 +1,10 @@
 # Exclude shell scripts from language statistics
 *.sh linguist-vendored
-scripts/* linguist-vendored
-iso-build/* linguist-vendored
+build.sh linguist-vendored
+scripts/*.sh linguist-vendored
+scripts/ linguist-vendored
+iso-build/ linguist-vendored
+iso-build/** linguist-vendored
 
 # Exclude CMake files from language statistics
 *.cmake linguist-vendored
