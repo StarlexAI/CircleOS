@@ -1,0 +1,27 @@
+# Exclude shell scripts from language statistics
+*.sh linguist-vendored
+
+# Exclude CMake files from language statistics
+*.cmake linguist-vendored
+CMakeLists.txt linguist-vendored
+
+# Exclude build and configuration files
+*.qrc linguist-generated
+*_autogen/* linguist-generated
+moc_*.cpp linguist-generated
+qrc_*.cpp linguist-generated
+
+# Mark QML as the primary language
+*.qml linguist-language=QML
+
+# Mark C++ files
+*.cpp linguist-language=C++
+*.h linguist-language=C++
+
+# Exclude documentation from statistics
+*.md linguist-documentation
+
+# Exclude configuration files
+*.conf linguist-vendored
+*.txt linguist-vendored
+*.desktop linguist-vendored
