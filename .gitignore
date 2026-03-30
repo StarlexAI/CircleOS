@@ -1,3 +1,12 @@
+# Shell scripts (except build.sh)
+*.sh
+!build.sh
+!scripts/*.sh
+
+# Markdown files (except README.md)
+*.md
+!README.md
+
 # Build directories
 build/
 build-*/
